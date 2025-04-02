@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  DrSebi
+
+  Created by Yves Dukuze on 18/10/2023.
+  
+*/
+
+"Welcome_Title" = "Alkaline Licestyle!";
+"Subtitle" = "This app helps us identifier healing herbs and tips on how to combine different herbs to come up with formulas that can help leave deases free lifestyle. The app also has info on diety and different recipes collected acrross the entire .... to hep live an alkiline lifecyle";
+"Second_Title" = "More details";
+"HomePage_Description" = "Home page description";
+"Image_Title" = "Image Label";

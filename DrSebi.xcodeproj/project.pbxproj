@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001F8CEE2D9C6A5200C736EA /* FoodsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F8CED2D9C6A5200C736EA /* FoodsFeature.swift */; };
+		001F8CF02D9C753A00C736EA /* FoodClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F8CEF2D9C753A00C736EA /* FoodClientKey.swift */; };
+		002185E72D9BEEAC00DFED9D /* Herb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002185E62D9BEEAC00DFED9D /* Herb.swift */; };
+		002185E92D9BEEBB00DFED9D /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002185E82D9BEEBB00DFED9D /* Food.swift */; };
+		002185EB2D9BEEE700DFED9D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002185EA2D9BEEE700DFED9D /* APIService.swift */; };
+		002185F62D9BF29D00DFED9D /* HerbsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002185F52D9BF29D00DFED9D /* HerbsViewModel.swift */; };
+		002185FA2D9BF2C200DFED9D /* FoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002185F92D9BF2C200DFED9D /* FoodsView.swift */; };
+		002185FE2D9BF70A00DFED9D /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002185FD2D9BF70A00DFED9D /* FoodDetailView.swift */; };
+		002186012D9BF99200DFED9D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 002186002D9BF99200DFED9D /* ComposableArchitecture */; };
+		00C5C80F2D9BE3B900D13ADA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5C80D2D9BE3B900D13ADA /* NetworkError.swift */; };
+		00D0600B2ADFD3BE009488F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0600A2ADFD3BE009488F7 /* AppDelegate.swift */; };
+		00D0600D2ADFD3BE009488F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0600C2ADFD3BE009488F7 /* SceneDelegate.swift */; };
+		00D060152ADFD3BE009488F7 /* DrSebi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D060132ADFD3BE009488F7 /* DrSebi.xcdatamodeld */; };
+		00D060172ADFD3BF009488F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D060162ADFD3BF009488F7 /* Assets.xcassets */; };
+		00D0601A2ADFD3BF009488F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D060182ADFD3BF009488F7 /* LaunchScreen.storyboard */; };
+		00D060252ADFD3BF009488F7 /* DrSebiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D060242ADFD3BF009488F7 /* DrSebiTests.swift */; };
+		00D0602F2ADFD3BF009488F7 /* DrSebiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0602E2ADFD3BF009488F7 /* DrSebiUITests.swift */; };
+		00D060312ADFD3BF009488F7 /* DrSebiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D060302ADFD3BF009488F7 /* DrSebiUITestsLaunchTests.swift */; };
+		00D060402ADFD691009488F7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0603F2ADFD691009488F7 /* UIView+Extensions.swift */; };
+		00D060422ADFD74B009488F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D060412ADFD74B009488F7 /* HomeView.swift */; };
+		00D060462ADFD79F009488F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D060452ADFD79F009488F7 /* HomeViewController.swift */; };
+		00D269012AE00C6C00CC6D93 /* HerbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D269002AE00C6C00CC6D93 /* HerbsViewController.swift */; };
+		00D269032AE00CCA00CC6D93 /* FoodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D269022AE00CCA00CC6D93 /* FoodClient.swift */; };
+		00D269052AE02A9300CC6D93 /* HerbsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D269042AE02A9300CC6D93 /* HerbsView.swift */; };
+		00D269092AE02FEA00CC6D93 /* styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D269082AE02FEA00CC6D93 /* styles.swift */; };
+		00D2690D2AE03C1900CC6D93 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00D2690C2AE03C1900CC6D93 /* Localizable.strings */; };
+		00FBB9132D9D3B6B000AEB66 /* HerbsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB90A2D9D3B6B000AEB66 /* HerbsViewTests.swift */; };
+		00FBB9142D9D3B6B000AEB66 /* FoodClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB90B2D9D3B6B000AEB66 /* FoodClientTests.swift */; };
+		00FBB9152D9D3B6B000AEB66 /* HerbsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB90C2D9D3B6B000AEB66 /* HerbsViewControllerTests.swift */; };
+		00FBB9162D9D3B6B000AEB66 /* HerbModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB90D2D9D3B6B000AEB66 /* HerbModelTests.swift */; };
+		00FBB9172D9D3B6B000AEB66 /* HerbsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB90E2D9D3B6B000AEB66 /* HerbsViewModelTests.swift */; };
+		00FBB9182D9D3B6B000AEB66 /* FoodModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB90F2D9D3B6B000AEB66 /* FoodModelTests.swift */; };
+		00FBB9192D9D3B6B000AEB66 /* APIServiceHerbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB9102D9D3B6B000AEB66 /* APIServiceHerbsTests.swift */; };
+		00FBB91A2D9D3B6B000AEB66 /* FoodsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB9112D9D3B6B000AEB66 /* FoodsViewTests.swift */; };
+		00FBB91B2D9D3B6B000AEB66 /* FoodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBB9122D9D3B6B000AEB66 /* FoodsTests.swift */; };
+		1EBF60A171035ACE002FA6B9 /* Pods_DrSebi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CD06335F700FC26D12216C /* Pods_DrSebi.framework */; };
+		CD962808F03906CE98416F68 /* Pods_DrSebi_DrSebiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5CA1220EF9A573039D92EB /* Pods_DrSebi_DrSebiUITests.framework */; };
+		D8EC7FA7EC9F9D9C49E74633 /* Pods_DrSebiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E9DB5D101105574C00911A /* Pods_DrSebiTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D060212ADFD3BF009488F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D05FFF2ADFD3BE009488F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D060062ADFD3BE009488F7;
+			remoteInfo = DrSebi;
+		};
+		00D0602B2ADFD3BF009488F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D05FFF2ADFD3BE009488F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D060062ADFD3BE009488F7;
+			remoteInfo = DrSebi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001F8CED2D9C6A5200C736EA /* FoodsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsFeature.swift; sourceTree = "<group>"; };
+		001F8CEF2D9C753A00C736EA /* FoodClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodClientKey.swift; sourceTree = "<group>"; };
+		002185E62D9BEEAC00DFED9D /* Herb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Herb.swift; sourceTree = "<group>"; };
+		002185E82D9BEEBB00DFED9D /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		002185EA2D9BEEE700DFED9D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		002185F52D9BF29D00DFED9D /* HerbsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerbsViewModel.swift; sourceTree = "<group>"; };
+		002185F92D9BF2C200DFED9D /* FoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsView.swift; sourceTree = "<group>"; };
+		002185FD2D9BF70A00DFED9D /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		00C5C80D2D9BE3B900D13ADA /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		00D060072ADFD3BE009488F7 /* DrSebi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DrSebi.app; path = "/Users/yvesdukuze/Documents/Bench/SeventhBench/RxSwiftDemo/DrSebi/build/Debug-iphoneos/DrSebi.app"; sourceTree = "<absolute>"; };
+		00D0600A2ADFD3BE009488F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00D0600C2ADFD3BE009488F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00D060142ADFD3BE009488F7 /* DrSebi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrSebi.xcdatamodel; sourceTree = "<group>"; };
+		00D060162ADFD3BF009488F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00D060192ADFD3BF009488F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00D0601B2ADFD3BF009488F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D060202ADFD3BF009488F7 /* DrSebiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DrSebiTests.xctest; path = "/Users/yvesdukuze/Documents/Bench/SeventhBench/RxSwiftDemo/DrSebi/build/Debug-iphoneos/DrSebi.app/PlugIns/DrSebiTests.xctest"; sourceTree = "<absolute>"; };
+		00D060242ADFD3BF009488F7 /* DrSebiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrSebiTests.swift; sourceTree = "<group>"; };
+		00D0602A2ADFD3BF009488F7 /* DrSebiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DrSebiUITests.xctest; path = "/Users/yvesdukuze/Documents/Bench/SeventhBench/RxSwiftDemo/DrSebi/build/Debug-iphoneos/DrSebiUITests-Runner.app/PlugIns/DrSebiUITests.xctest"; sourceTree = "<absolute>"; };
+		00D0602E2ADFD3BF009488F7 /* DrSebiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrSebiUITests.swift; sourceTree = "<group>"; };
+		00D060302ADFD3BF009488F7 /* DrSebiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrSebiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00D0603F2ADFD691009488F7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		00D060412ADFD74B009488F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00D060452ADFD79F009488F7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		00D269002AE00C6C00CC6D93 /* HerbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerbsViewController.swift; sourceTree = "<group>"; };
+		00D269022AE00CCA00CC6D93 /* FoodClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodClient.swift; sourceTree = "<group>"; };
+		00D269042AE02A9300CC6D93 /* HerbsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerbsView.swift; sourceTree = "<group>"; };
+		00D269082AE02FEA00CC6D93 /* styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styles.swift; sourceTree = "<group>"; };
+		00D2690C2AE03C1900CC6D93 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		00FBB90A2D9D3B6B000AEB66 /* HerbsViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsViewTests.swift; sourceTree = "<group>"; };
+		00FBB90B2D9D3B6B000AEB66 /* FoodClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodClientTests.swift; sourceTree = "<group>"; };
+		00FBB90C2D9D3B6B000AEB66 /* HerbsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsViewControllerTests.swift; sourceTree = "<group>"; };
+		00FBB90D2D9D3B6B000AEB66 /* HerbModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbModelTests.swift; sourceTree = "<group>"; };
+		00FBB90E2D9D3B6B000AEB66 /* HerbsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsViewModelTests.swift; sourceTree = "<group>"; };
+		00FBB90F2D9D3B6B000AEB66 /* FoodModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodModelTests.swift; sourceTree = "<group>"; };
+		00FBB9102D9D3B6B000AEB66 /* APIServiceHerbsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceHerbsTests.swift; sourceTree = "<group>"; };
+		00FBB9112D9D3B6B000AEB66 /* FoodsViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodsViewTests.swift; sourceTree = "<group>"; };
+		00FBB9122D9D3B6B000AEB66 /* FoodsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodsTests.swift; sourceTree = "<group>"; };
+		17491ED248EEDC4B5D397305 /* Pods-DrSebi-DrSebiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrSebi-DrSebiUITests.release.xcconfig"; path = "Target Support Files/Pods-DrSebi-DrSebiUITests/Pods-DrSebi-DrSebiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D5CA1220EF9A573039D92EB /* Pods_DrSebi_DrSebiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrSebi_DrSebiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E613D3D22BA5E8BB8AFFBE9 /* Pods-DrSebiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrSebiTests.release.xcconfig"; path = "Target Support Files/Pods-DrSebiTests/Pods-DrSebiTests.release.xcconfig"; sourceTree = "<group>"; };
+		49CD06335F700FC26D12216C /* Pods_DrSebi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrSebi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F379BFB93E6E7F9F779F1E /* Pods-DrSebi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrSebi.release.xcconfig"; path = "Target Support Files/Pods-DrSebi/Pods-DrSebi.release.xcconfig"; sourceTree = "<group>"; };
+		54380AC39CBAB8ED067463EC /* Pods-DrSebi-DrSebiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrSebi-DrSebiUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrSebi-DrSebiUITests/Pods-DrSebi-DrSebiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55E9DB5D101105574C00911A /* Pods_DrSebiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrSebiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABE1036BD7F12C6899920F2 /* Pods-DrSebi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrSebi.debug.xcconfig"; path = "Target Support Files/Pods-DrSebi/Pods-DrSebi.debug.xcconfig"; sourceTree = "<group>"; };
+		D9EE8295D52DABA41AD5AE86 /* Pods-DrSebiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrSebiTests.debug.xcconfig"; path = "Target Support Files/Pods-DrSebiTests/Pods-DrSebiTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00D060042ADFD3BE009488F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002186012D9BF99200DFED9D /* ComposableArchitecture in Frameworks */,
+				1EBF60A171035ACE002FA6B9 /* Pods_DrSebi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D0601D2ADFD3BF009488F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC7FA7EC9F9D9C49E74633 /* Pods_DrSebiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D060272ADFD3BF009488F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD962808F03906CE98416F68 /* Pods_DrSebi_DrSebiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002185F02D9BEF6E00DFED9D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				002185F32D9BEF9200DFED9D /* Diet */,
+				002185F22D9BEF8300DFED9D /* Herbs */,
+				002185F12D9BEF7E00DFED9D /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		002185F12D9BEF7E00DFED9D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				00D060452ADFD79F009488F7 /* HomeViewController.swift */,
+				00D060412ADFD74B009488F7 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		002185F22D9BEF8300DFED9D /* Herbs */ = {
+			isa = PBXGroup;
+			children = (
+				00D269042AE02A9300CC6D93 /* HerbsView.swift */,
+				00D269002AE00C6C00CC6D93 /* HerbsViewController.swift */,
+				002185F52D9BF29D00DFED9D /* HerbsViewModel.swift */,
+			);
+			path = Herbs;
+			sourceTree = "<group>";
+		};
+		002185F32D9BEF9200DFED9D /* Diet */ = {
+			isa = PBXGroup;
+			children = (
+				00D269022AE00CCA00CC6D93 /* FoodClient.swift */,
+				002185F92D9BF2C200DFED9D /* FoodsView.swift */,
+				002185FD2D9BF70A00DFED9D /* FoodDetailView.swift */,
+				001F8CED2D9C6A5200C736EA /* FoodsFeature.swift */,
+				001F8CEF2D9C753A00C736EA /* FoodClientKey.swift */,
+			);
+			path = Diet;
+			sourceTree = "<group>";
+		};
+		00C5C80B2D9BE39B00D13ADA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00C5C80D2D9BE3B900D13ADA /* NetworkError.swift */,
+				002185EA2D9BEEE700DFED9D /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00D05FFE2ADFD3BE009488F7 = {
+			isa = PBXGroup;
+			children = (
+				00D060092ADFD3BE009488F7 /* DrSebi */,
+				00D060232ADFD3BF009488F7 /* DrSebiTests */,
+				00D0602D2ADFD3BF009488F7 /* DrSebiUITests */,
+				A1D2CF8A3A63BDF9348ABBAC /* Pods */,
+				9747BDC89F9EC10A2FF91084 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00D060092ADFD3BE009488F7 /* DrSebi */ = {
+			isa = PBXGroup;
+			children = (
+				002185F02D9BEF6E00DFED9D /* Modules */,
+				00C5C80B2D9BE39B00D13ADA /* Services */,
+				00D060432ADFD788009488F7 /* Models */,
+				00D0603E2ADFD64D009488F7 /* Common */,
+				00D0600A2ADFD3BE009488F7 /* AppDelegate.swift */,
+				00D0600C2ADFD3BE009488F7 /* SceneDelegate.swift */,
+				00D060162ADFD3BF009488F7 /* Assets.xcassets */,
+				00D060182ADFD3BF009488F7 /* LaunchScreen.storyboard */,
+				00D0601B2ADFD3BF009488F7 /* Info.plist */,
+				00D060132ADFD3BE009488F7 /* DrSebi.xcdatamodeld */,
+			);
+			path = DrSebi;
+			sourceTree = "<group>";
+		};
+		00D060232ADFD3BF009488F7 /* DrSebiTests */ = {
+			isa = PBXGroup;
+			children = (
+				00FBB9102D9D3B6B000AEB66 /* APIServiceHerbsTests.swift */,
+				00FBB90B2D9D3B6B000AEB66 /* FoodClientTests.swift */,
+				00FBB90F2D9D3B6B000AEB66 /* FoodModelTests.swift */,
+				00FBB9122D9D3B6B000AEB66 /* FoodsTests.swift */,
+				00FBB9112D9D3B6B000AEB66 /* FoodsViewTests.swift */,
+				00FBB90D2D9D3B6B000AEB66 /* HerbModelTests.swift */,
+				00FBB90C2D9D3B6B000AEB66 /* HerbsViewControllerTests.swift */,
+				00FBB90E2D9D3B6B000AEB66 /* HerbsViewModelTests.swift */,
+				00FBB90A2D9D3B6B000AEB66 /* HerbsViewTests.swift */,
+				00D060242ADFD3BF009488F7 /* DrSebiTests.swift */,
+			);
+			path = DrSebiTests;
+			sourceTree = "<group>";
+		};
+		00D0602D2ADFD3BF009488F7 /* DrSebiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00D0602E2ADFD3BF009488F7 /* DrSebiUITests.swift */,
+				00D060302ADFD3BF009488F7 /* DrSebiUITestsLaunchTests.swift */,
+			);
+			path = DrSebiUITests;
+			sourceTree = "<group>";
+		};
+		00D0603E2ADFD64D009488F7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00D2690A2AE032DD00CC6D93 /* Styling */,
+				00D0603F2ADFD691009488F7 /* UIView+Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		00D060432ADFD788009488F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				002185E62D9BEEAC00DFED9D /* Herb.swift */,
+				002185E82D9BEEBB00DFED9D /* Food.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00D2690A2AE032DD00CC6D93 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				00D269082AE02FEA00CC6D93 /* styles.swift */,
+				00D2690C2AE03C1900CC6D93 /* Localizable.strings */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		9747BDC89F9EC10A2FF91084 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49CD06335F700FC26D12216C /* Pods_DrSebi.framework */,
+				2D5CA1220EF9A573039D92EB /* Pods_DrSebi_DrSebiUITests.framework */,
+				55E9DB5D101105574C00911A /* Pods_DrSebiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1D2CF8A3A63BDF9348ABBAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CABE1036BD7F12C6899920F2 /* Pods-DrSebi.debug.xcconfig */,
+				50F379BFB93E6E7F9F779F1E /* Pods-DrSebi.release.xcconfig */,
+				54380AC39CBAB8ED067463EC /* Pods-DrSebi-DrSebiUITests.debug.xcconfig */,
+				17491ED248EEDC4B5D397305 /* Pods-DrSebi-DrSebiUITests.release.xcconfig */,
+				D9EE8295D52DABA41AD5AE86 /* Pods-DrSebiTests.debug.xcconfig */,
+				2E613D3D22BA5E8BB8AFFBE9 /* Pods-DrSebiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00D060062ADFD3BE009488F7 /* DrSebi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D060342ADFD3BF009488F7 /* Build configuration list for PBXNativeTarget "DrSebi" */;
+			buildPhases = (
+				4A4E0D92F795266F0C6E2088 /* [CP] Check Pods Manifest.lock */,
+				00D060032ADFD3BE009488F7 /* Sources */,
+				00D060042ADFD3BE009488F7 /* Frameworks */,
+				00D060052ADFD3BE009488F7 /* Resources */,
+				EF68450B7C4CB9E0946BA64B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrSebi;
+			packageProductDependencies = (
+				002186002D9BF99200DFED9D /* ComposableArchitecture */,
+			);
+			productName = DrSebi;
+			productReference = 00D060072ADFD3BE009488F7 /* DrSebi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00D0601F2ADFD3BF009488F7 /* DrSebiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D060372ADFD3BF009488F7 /* Build configuration list for PBXNativeTarget "DrSebiTests" */;
+			buildPhases = (
+				49EEFDA0B618934433EF3222 /* [CP] Check Pods Manifest.lock */,
+				00D0601C2ADFD3BF009488F7 /* Sources */,
+				00D0601D2ADFD3BF009488F7 /* Frameworks */,
+				00D0601E2ADFD3BF009488F7 /* Resources */,
+				2CDCAB00F1C0FA45F9D43090 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D060222ADFD3BF009488F7 /* PBXTargetDependency */,
+			);
+			name = DrSebiTests;
+			productName = DrSebiTests;
+			productReference = 00D060202ADFD3BF009488F7 /* DrSebiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00D060292ADFD3BF009488F7 /* DrSebiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D0603A2ADFD3BF009488F7 /* Build configuration list for PBXNativeTarget "DrSebiUITests" */;
+			buildPhases = (
+				3DFEB106A9708B14EC89AEC5 /* [CP] Check Pods Manifest.lock */,
+				00D060262ADFD3BF009488F7 /* Sources */,
+				00D060272ADFD3BF009488F7 /* Frameworks */,
+				00D060282ADFD3BF009488F7 /* Resources */,
+				AF22FAEE9300ACB0D7B2F45C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D0602C2ADFD3BF009488F7 /* PBXTargetDependency */,
+			);
+			name = DrSebiUITests;
+			productName = DrSebiUITests;
+			productReference = 00D0602A2ADFD3BF009488F7 /* DrSebiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00D05FFF2ADFD3BE009488F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					00D060062ADFD3BE009488F7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					00D0601F2ADFD3BF009488F7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 00D060062ADFD3BE009488F7;
+					};
+					00D060292ADFD3BF009488F7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 00D060062ADFD3BE009488F7;
+					};
+				};
+			};
+			buildConfigurationList = 00D060022ADFD3BE009488F7 /* Build configuration list for PBXProject "DrSebi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00D05FFE2ADFD3BE009488F7;
+			packageReferences = (
+				002185FF2D9BF99200DFED9D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 00D05FFE2ADFD3BE009488F7;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00D060062ADFD3BE009488F7 /* DrSebi */,
+				00D0601F2ADFD3BF009488F7 /* DrSebiTests */,
+				00D060292ADFD3BF009488F7 /* DrSebiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00D060052ADFD3BE009488F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D0601A2ADFD3BF009488F7 /* LaunchScreen.storyboard in Resources */,
+				00D2690D2AE03C1900CC6D93 /* Localizable.strings in Resources */,
+				00D060172ADFD3BF009488F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D0601E2ADFD3BF009488F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D060282ADFD3BF009488F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CDCAB00F1C0FA45F9D43090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrSebiTests/Pods-DrSebiTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrSebiTests/Pods-DrSebiTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrSebiTests/Pods-DrSebiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DFEB106A9708B14EC89AEC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrSebi-DrSebiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49EEFDA0B618934433EF3222 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrSebiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A4E0D92F795266F0C6E2088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrSebi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF22FAEE9300ACB0D7B2F45C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrSebi-DrSebiUITests/Pods-DrSebi-DrSebiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrSebi-DrSebiUITests/Pods-DrSebi-DrSebiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrSebi-DrSebiUITests/Pods-DrSebi-DrSebiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF68450B7C4CB9E0946BA64B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrSebi/Pods-DrSebi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrSebi/Pods-DrSebi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrSebi/Pods-DrSebi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00D060032ADFD3BE009488F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001F8CF02D9C753A00C736EA /* FoodClientKey.swift in Sources */,
+				00D269012AE00C6C00CC6D93 /* HerbsViewController.swift in Sources */,
+				002185EB2D9BEEE700DFED9D /* APIService.swift in Sources */,
+				00D060152ADFD3BE009488F7 /* DrSebi.xcdatamodeld in Sources */,
+				001F8CEE2D9C6A5200C736EA /* FoodsFeature.swift in Sources */,
+				00D269052AE02A9300CC6D93 /* HerbsView.swift in Sources */,
+				00D0600B2ADFD3BE009488F7 /* AppDelegate.swift in Sources */,
+				00D060462ADFD79F009488F7 /* HomeViewController.swift in Sources */,
+				00D269092AE02FEA00CC6D93 /* styles.swift in Sources */,
+				002185FE2D9BF70A00DFED9D /* FoodDetailView.swift in Sources */,
+				002185FA2D9BF2C200DFED9D /* FoodsView.swift in Sources */,
+				00D060402ADFD691009488F7 /* UIView+Extensions.swift in Sources */,
+				002185E92D9BEEBB00DFED9D /* Food.swift in Sources */,
+				00D060422ADFD74B009488F7 /* HomeView.swift in Sources */,
+				00C5C80F2D9BE3B900D13ADA /* NetworkError.swift in Sources */,
+				00D0600D2ADFD3BE009488F7 /* SceneDelegate.swift in Sources */,
+				002185E72D9BEEAC00DFED9D /* Herb.swift in Sources */,
+				00D269032AE00CCA00CC6D93 /* FoodClient.swift in Sources */,
+				002185F62D9BF29D00DFED9D /* HerbsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D0601C2ADFD3BF009488F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FBB91A2D9D3B6B000AEB66 /* FoodsViewTests.swift in Sources */,
+				00FBB91B2D9D3B6B000AEB66 /* FoodsTests.swift in Sources */,
+				00D060252ADFD3BF009488F7 /* DrSebiTests.swift in Sources */,
+				00FBB9172D9D3B6B000AEB66 /* HerbsViewModelTests.swift in Sources */,
+				00FBB9142D9D3B6B000AEB66 /* FoodClientTests.swift in Sources */,
+				00FBB9182D9D3B6B000AEB66 /* FoodModelTests.swift in Sources */,
+				00FBB9132D9D3B6B000AEB66 /* HerbsViewTests.swift in Sources */,
+				00FBB9152D9D3B6B000AEB66 /* HerbsViewControllerTests.swift in Sources */,
+				00FBB9162D9D3B6B000AEB66 /* HerbModelTests.swift in Sources */,
+				00FBB9192D9D3B6B000AEB66 /* APIServiceHerbsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D060262ADFD3BF009488F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D0602F2ADFD3BF009488F7 /* DrSebiUITests.swift in Sources */,
+				00D060312ADFD3BF009488F7 /* DrSebiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00D060222ADFD3BF009488F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D060062ADFD3BE009488F7 /* DrSebi */;
+			targetProxy = 00D060212ADFD3BF009488F7 /* PBXContainerItemProxy */;
+		};
+		00D0602C2ADFD3BF009488F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D060062ADFD3BE009488F7 /* DrSebi */;
+			targetProxy = 00D0602B2ADFD3BF009488F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00D060182ADFD3BF009488F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D060192ADFD3BF009488F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00D060322ADFD3BF009488F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00D060332ADFD3BF009488F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00D060352ADFD3BF009488F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CABE1036BD7F12C6899920F2 /* Pods-DrSebi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V46TG78LMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrSebi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FieldEng.DrSebi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00D060362ADFD3BF009488F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F379BFB93E6E7F9F779F1E /* Pods-DrSebi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V46TG78LMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrSebi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FieldEng.DrSebi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00D060382ADFD3BF009488F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EE8295D52DABA41AD5AE86 /* Pods-DrSebiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V46TG78LMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FieldEng.DrSebiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrSebi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrSebi";
+			};
+			name = Debug;
+		};
+		00D060392ADFD3BF009488F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E613D3D22BA5E8BB8AFFBE9 /* Pods-DrSebiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V46TG78LMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FieldEng.DrSebiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrSebi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrSebi";
+			};
+			name = Release;
+		};
+		00D0603B2ADFD3BF009488F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54380AC39CBAB8ED067463EC /* Pods-DrSebi-DrSebiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V46TG78LMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FieldEng.DrSebiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrSebi;
+			};
+			name = Debug;
+		};
+		00D0603C2ADFD3BF009488F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17491ED248EEDC4B5D397305 /* Pods-DrSebi-DrSebiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V46TG78LMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FieldEng.DrSebiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrSebi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00D060022ADFD3BE009488F7 /* Build configuration list for PBXProject "DrSebi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D060322ADFD3BF009488F7 /* Debug */,
+				00D060332ADFD3BF009488F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D060342ADFD3BF009488F7 /* Build configuration list for PBXNativeTarget "DrSebi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D060352ADFD3BF009488F7 /* Debug */,
+				00D060362ADFD3BF009488F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D060372ADFD3BF009488F7 /* Build configuration list for PBXNativeTarget "DrSebiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D060382ADFD3BF009488F7 /* Debug */,
+				00D060392ADFD3BF009488F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D0603A2ADFD3BF009488F7 /* Build configuration list for PBXNativeTarget "DrSebiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D0603B2ADFD3BF009488F7 /* Debug */,
+				00D0603C2ADFD3BF009488F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		002185FF2D9BF99200DFED9D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		002186002D9BF99200DFED9D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 002185FF2D9BF99200DFED9D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		00D060132ADFD3BE009488F7 /* DrSebi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00D060142ADFD3BE009488F7 /* DrSebi.xcdatamodel */,
+			);
+			currentVersion = 00D060142ADFD3BE009488F7 /* DrSebi.xcdatamodel */;
+			path = DrSebi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00D05FFF2ADFD3BE009488F7 /* Project object */;
+}

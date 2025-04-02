@@ -1,0 +1,6 @@
+framework module Pods_DrSebi {
+  umbrella header "Pods-DrSebi-umbrella.h"
+
+  export *
+  module * { export * }
+}
