@@ -2,6 +2,9 @@
 
 A comprehensive iOS application focused on natural health and healing, inspired by Dr. Sebi's holistic approach to wellness. This app showcases different architectures and UI patterns in iOS development.
 
+<img src="https://github.com/user-attachments/assets/cbc682da-3ebd-4284-b58e-0ce091b9bb17" alt="" width="250">
+
+
 ## Features
 
 - **Foods Module**: SwiftUI interface with The Composable Architecture (TCA) pattern
