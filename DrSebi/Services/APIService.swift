@@ -15,6 +15,16 @@ protocol APIServiceProtocol {
 
 final class APIService: APIServiceProtocol {
     
+    // MARK: - URL Constants
+    private enum API {
+        static let baseURL = "https://62bc4a356b1401736cf7083b.mockapi.io"
+        
+        enum Endpoints {
+            static let herbs = baseURL + "/herbs"
+            static let foods = "https://failingApi/foods" // Note: This is deliberately failing in the original code
+        }
+    }
+    
     static let shared = APIService()
     
     private init() {}
@@ -22,7 +32,7 @@ final class APIService: APIServiceProtocol {
     
     func fetchHerbs() -> Single<[Herb]> {
         Single.create { single in
-            guard let url = URL(string: "https://62bc4a356b1401736cf7083b.mockapi.io/herbs") else {
+            guard let url = URL(string: API.Endpoints.herbs) else {
                 single(.failure(NetworkError.invalidURL))
                 return Disposables.create()
             }
@@ -62,7 +72,7 @@ final class APIService: APIServiceProtocol {
     
     func fetchFoods() -> Single<[Food]> {
         Single.create { single in
-            guard let url = URL(string: "https://failingApi/foods") else {
+            guard let url = URL(string: API.Endpoints.foods) else {
                 single(.failure(NetworkError.invalidURL))
                 return Disposables.create()
             }
